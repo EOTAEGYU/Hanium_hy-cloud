@@ -1,10 +1,15 @@
 #pip install --upgrade google-api-python-client
 #pip install --upgrade google-cloud-monitoring
 
-import os, time, sys
+import time, os
 from time import strftime, localtime
 from google.cloud import monitoring_v3
-from common import ConfigManager, CommonUtil, RestClient
+from google.protobuf.timestamp_pb2 import Timestamp
+import datetime
+
+def set_credentials(filepath):
+    os.environ.setdefault('GOOGLE_APPLICATION_CREDENTIALS', filepath)
+
 
 def print_list():
     client = monitoring_v3.MetricServiceClient()
@@ -52,12 +57,15 @@ def print_get():
     for result in results:
         print(result)
 
-
-
-def get_cpu_utilization(p_project_name, p_instance_id):
-
+def get_instance_name(project_id, zone, instance_id):
     client = monitoring_v3.MetricServiceClient()
-    project_name = p_project_name
+
+    # 인스턴스 ID를 리소스 경로로 변환
+    resource_name = f"projects/{project_id}/zones/{zone}/instances/{instance_id}"
+
+    # 현재 시간을 가져와서 endTime으로 사용
+    end_time = Timestamp()
+    end_time.FromDatetime(datetime.datetime.utcnow())
 
     now = time.time()
     tm = localtime(now)
@@ -67,37 +75,34 @@ def get_cpu_utilization(p_project_name, p_instance_id):
     interval = monitoring_v3.TimeInterval(
         {
             "end_time": {"seconds": seconds, "nanos": nanos},
-            "start_time": {"seconds": (seconds - 60), "nanos": nanos},
+            "start_time": {"seconds": (seconds - 120), "nanos": nanos},
         }
     )
 
+    # 메트릭 쿼리 생성 (메트릭 종류를 지정하여 더 구체적으로 필터링)
+    query = f'resource.type="gce_instance" AND resource.labels.instance_id="{resource_name}" ' \
+            f'AND metric.type="compute.googleapis.com/instance/cpu/utilization"'
+
+    # 메트릭 시계열 조회
     results = client.list_time_series(
-        request={
-            "name": project_name,
-            #"filter": 'metric.type = "agent.googleapis.com/cpu/utilization" AND resource.labels.instance_id = "' + p_instance_id + '"',
-            "filter": 'metric.type = "agent.googleapis.com/cpu/utilization"',
-            "interval": interval,
-            "view": monitoring_v3.ListTimeSeriesRequest.TimeSeriesView.FULL,
-        }
+        name=f"projects/{project_id}",
+        filter=query,
+        interval=interval,
     )
-    result_list = []
+
+    # 인스턴스 이름 가져오기
     for result in results:
-        if result.metric.labels.get("cpu_state") == "idle":
-            _dict = {}
-            _dict["vendor"] = "gcp"
-            _dict["instance_id"] = result.resource.labels.get("instance_id")
-            _dict["metric"] = "cpu"
-            _dict["value"] = round(100 - result.points[0].value.double_value, 1)
-            _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)
-            _dict["time_key"] = strftime('%Y%m%d%I%M%S', tm)
-            result_list.append(_dict)
+        resource = result.resource
+        if resource.type == 'gce_instance':
+            return resource.labels.get('instance_name', 'Instance not found')
 
-    return result_list
+    return 'Instance not found'
 
-def get_memory_utilization(p_project_name, p_instance_id):
+
+def get_cpu_utilization(project_id):
 
     client = monitoring_v3.MetricServiceClient()
-    project_name = p_project_name
+    project_name = f"projects/{project_id}"
 
     now = time.time()
     tm = localtime(now)
@@ -114,7 +119,46 @@ def get_memory_utilization(p_project_name, p_instance_id):
     results = client.list_time_series(
         request={
             "name": project_name,
-            #"filter": 'metric.type = "agent.googleapis.com/memory/percent_used" AND resource.labels.instance_id = "' + p_instance_id + '"',
+            "filter": 'metric.type = "agent.googleapis.com/cpu/utilization"',
+            "interval": interval,
+            "view": monitoring_v3.ListTimeSeriesRequest.TimeSeriesView.FULL,
+        }
+    )
+    result_list = []
+    for result in results:
+        if result.metric.labels.get("cpu_state") == "idle":
+            _dict = {}
+            _dict["vendor"] = "gcp"
+            _dict["instance_id"] = result.resource.labels.get("instance_id")
+            _dict["instance_name"] = ""
+            _dict["metric"] = "cpu"
+            _dict["value"] = round(100 - result.points[0].value.double_value, 1)
+            _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)
+            _dict["time_key"] = strftime('%Y%m%d%I%M%S', tm)
+            result_list.append(_dict)
+
+    return result_list
+
+def get_memory_utilization(project_id):
+
+    client = monitoring_v3.MetricServiceClient()
+    project_name = f"projects/{project_id}"
+
+    now = time.time()
+    tm = localtime(now)
+
+    seconds = int(now)
+    nanos = int((now - seconds) * 10 ** 9)
+    interval = monitoring_v3.TimeInterval(
+        {
+            "end_time": {"seconds": seconds, "nanos": nanos},
+            "start_time": {"seconds": (seconds - 120), "nanos": nanos},
+        }
+    )
+
+    results = client.list_time_series(
+        request={
+            "name": project_name,
             "filter": 'metric.type = "agent.googleapis.com/memory/percent_used"',
             "interval": interval,
             "view": monitoring_v3.ListTimeSeriesRequest.TimeSeriesView.FULL,
@@ -126,6 +170,7 @@ def get_memory_utilization(p_project_name, p_instance_id):
             _dict = {}
             _dict["vendor"] = "gcp"
             _dict["instance_id"] = result.resource.labels.get("instance_id")
+            _dict["instance_name"] = ""
             _dict["metric"] = "memory"
             _dict["value"] = round(100 - result.points[0].value.double_value, 1)
             _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)
@@ -134,27 +179,49 @@ def get_memory_utilization(p_project_name, p_instance_id):
 
     return result_list
 
-if __name__ == '__main__':
+def get_process_status(project_id, instance_id, process_name):
 
-    myfunc = sys._getframe().f_code.co_name
-    os.environ.setdefault('GOOGLE_APPLICATION_CREDENTIALS', 'C:\\Temp\\poc-jhlee-cadc73bf2cce.json')
-    rest_client = RestClient.RestClient()
-    project_name = f"projects/poc-jhlee"
+    client = monitoring_v3.MetricServiceClient()
+    project_name = f"projects/{project_id}"
 
-    results = get_cpu_utilization(project_name, "")
+    now = time.time()
+    tm = localtime(now)
+
+    seconds = int(now)
+    nanos = int((now - seconds) * 10 ** 9)
+    interval = monitoring_v3.TimeInterval(
+        {
+            "end_time": {"seconds": seconds, "nanos": nanos},
+            "start_time": {"seconds": (seconds - 120000), "nanos": nanos},
+        }
+    )
+
+    results = client.list_time_series(
+        request={
+            "name": project_name,
+            "filter": f"resource.type = \"gce_instance\" AND resource.labels.instance_id = \"{instance_id}\" metric.type = \"agent.googleapis.com/processes/cpu_time\" AND (metric.labels.command_line = \"{process_name}\" AND metric.labels.user_or_syst = \"user\")",
+            "interval": interval,
+            "view": monitoring_v3.ListTimeSeriesRequest.TimeSeriesView.FULL,
+        }
+    )
+
+    _dict = {}
+    is_running = 0
     for result in results:
         print(result)
-        response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
+        is_running = 1
+        _dict["vendor"] = "gcp"
+        _dict["instance_id"] = instance_id
+        _dict["instance_name"] = ""
+        _dict["metric"] = "process"
+        _dict["value"] = "running"
+        _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)
+    if is_running == 0:
+        _dict["vendor"] = "gcp"
+        _dict["instance_id"] = instance_id
+        _dict["instance_name"] = ""
+        _dict["metric"] = f"process({process_name})"
+        _dict["value"] = "stopped"
+        _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)
 
-
-    results = get_memory_utilization(project_name, "")
-    for result in results:
-        print(result)
-        response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
-
-
-    #print_get()
-    #print_list()
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    return _dict

@@ -154,3 +154,44 @@
 [2023-06-30 12:46:18,804][PID:49760][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
 [2023-06-30 12:46:18,807][PID:49760][INFO] [db_insert] DB insert success. table(monitor)
 [2023-06-30 12:46:18,815][PID:49760][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:52:46,925][PID:35056][INFO] version: 1.0.0
+[2023-08-21 15:52:46,196][PID:35056][INFO] [load_config] Config file: (./config/config.xml)
+[2023-08-21 15:52:46,196][PID:35056][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-08-21 15:52:49,236][PID:11804][INFO] version: 1.0.0
+[2023-08-21 15:52:49,767][PID:11804][INFO] [load_config] Config file: (./config/config.xml)
+[2023-08-21 15:52:49,768][PID:11804][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-08-21 15:54:46,788][PID:11804][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='cpu' value=0.2 time='2023-08-21 03:54:46 PM' time_key='20230821035446'
+[2023-08-21 15:54:46,788][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': '0.2', 'time': '2023-08-21 03:54:46 PM', 'time_key': '20230821035446'}
+[2023-08-21 15:54:46,832][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:46,834][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:46,834][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:46,841][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:46,848][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:47,247][PID:11804][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='memory' value=41.9 time='2023-08-21 03:54:46 PM' time_key='20230821035446'
+[2023-08-21 15:54:47,247][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': '41.9', 'time': '2023-08-21 03:54:46 PM', 'time_key': '20230821035446'}
+[2023-08-21 15:54:47,285][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:47,286][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:47,286][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:47,293][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:47,299][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:48,805][PID:11804][INFO] [post_monitor_info] called api. item:vendor='aws' instance_id='i-0418b4b2c14c8bdd4' instance_name='mpower-server' metric='cpu' value=95.4 time='2023-08-21 06:44:48 AM' time_key='20230821064448'
+[2023-08-21 15:54:48,805][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': '95.4', 'time': '2023-08-21 06:44:48 AM', 'time_key': '20230821064448'}
+[2023-08-21 15:54:48,858][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:48,859][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:48,859][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:48,866][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:48,874][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:48,879][PID:11804][INFO] [post_monitor_info] called api. item:vendor='aws' instance_id='i-050055ad7cbb6d5ed' instance_name='test-vm' metric='cpu' value=0.7 time='2023-08-21 06:44:48 AM' time_key='20230821064448'
+[2023-08-21 15:54:48,880][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': '0.7', 'time': '2023-08-21 06:44:48 AM', 'time_key': '20230821064448'}
+[2023-08-21 15:54:48,928][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:48,929][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:48,929][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:48,934][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:48,942][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:49,044][PID:11804][INFO] [post_monitor_info] called api. item:vendor='aws' instance_id='i-050055ad7cbb6d5ed' instance_name='test-vm' metric='memory' value=15.3 time='2023-08-21 06:49:00 AM' time_key='20230821064900'
+[2023-08-21 15:54:49,044][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': '15.3', 'time': '2023-08-21 06:49:00 AM', 'time_key': '20230821064900'}
+[2023-08-21 15:54:49,073][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:49,074][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:49,075][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:49,081][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:49,089][PID:11804][INFO] [db_close] MySQL disconnected.

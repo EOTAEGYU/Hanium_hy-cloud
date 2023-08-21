@@ -16,6 +16,7 @@ logger = None
 class MonitorInfo(BaseModel):
     vendor: str
     instance_id: str
+    instance_name: str
     metric: str
     value: float
     time: str
@@ -33,6 +34,7 @@ def post_monitor_info(monitorInfo: MonitorInfo):
         _dict = {}
         _dict['vendor'] = str(monitorInfo.vendor)
         _dict['instance_id'] = str(monitorInfo.instance_id)
+        _dict['instance_name'] = str(monitorInfo.instance_name)
         _dict['metric'] = str(monitorInfo.metric)
         _dict['value'] = str(monitorInfo.value)
         _dict['time'] = str(monitorInfo.time)
