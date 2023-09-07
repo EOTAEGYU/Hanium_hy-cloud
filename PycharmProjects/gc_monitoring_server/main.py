@@ -6,12 +6,14 @@ import os
 import sys
 import datetime
 import pandas as pd
+from typing import Optional
 from pydantic import BaseModel
-from common import ConfigManager, MySQLWrapper
+from common import ConfigManager, MySQLWrapper, CommonUtil
 
 config_manager = None
 interface_process = None
 logger = None
+commonUtil = CommonUtil.CommonUtil()
 
 class MonitorInfo(BaseModel):
     vendor: str
@@ -50,12 +52,43 @@ def post_monitor_info(monitorInfo: MonitorInfo):
         mysql_wrapper.db_commit()
         mysql_wrapper.db_close()
 
-        json_data = make_json_result(True, "0", "", "")
+        json_data = commonUtil.make_json_result(True, "0", "", "")
         return json_data
 
     except Exception as err:
-        json_data = make_json_result(False, "99", f"{str(err)}", None)
+        json_data = commonUtil.make_json_result(False, "99", f"{str(err)}", None)
         logger.error(f"[{myfunc}] Exception err:{str(err)}, data:{_dict}")
+        mysql_wrapper.db_close()
+        return json_data
+
+@app.get("/monitor_info")
+def get_monitor_info(instance_id: Optional[str] = None, start_date: Optional[str] = None, vendor: Optional[str] = None):
+    try:
+        myfunc = sys._getframe().f_code.co_name
+        logger.info(f"[{myfunc}] called api.")
+
+        mysql_wrapper = MySQLWrapper.MySQLWrapper()
+        mysql_wrapper.set_logger(config_manager.get_logger())
+        mysql_wrapper.db_connect(config_manager.get_db_connection_info())
+        sql_text = "select * from monitor where 1=1 "
+        if instance_id:
+            sql_text = sql_text + f"and instance_id = '{instance_id}' "
+        if start_date:
+            sql_text = sql_text + f"and time > '{start_date}' "
+        if vendor:
+            sql_text = sql_text + f"and vendor = '{vendor}' "
+
+        monitor_info = mysql_wrapper.db_select("all", sql_text)
+
+        _json_data = commonUtil.make_json_result(True, "0", "", monitor_info)
+
+        logger.info(f"[{myfunc}] return data:{_json_data}")
+        mysql_wrapper.db_close()
+        return _json_data
+
+    except Exception as err:
+        json_data = commonUtil.make_json_result(False, "99", str(err), None)
+        logger.error(f"[{myfunc}] Exception err:{err}")
         mysql_wrapper.db_close()
         return json_data
 
@@ -74,14 +107,6 @@ def startup():
 @app.on_event("shutdown")
 def shutdown():
     pass
-
-def make_json_result(is_success, result_code, result_message, data):
-    json_data = OrderedDict()
-    json_data['success'] = is_success
-    json_data['resultCode'] = result_code
-    json_data['resultMessage'] = result_message
-    json_data['data'] = data
-    return json_data
 
 
 if __name__ == '__main__':
