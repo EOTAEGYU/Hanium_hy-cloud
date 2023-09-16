@@ -140,6 +140,7 @@ h1 {
 }
 
 .width-height {/*chart 크기조절*/
-  width: 350px;
-  height: 250px;
+  
+  width: 21.875em;
+  height: 15.625em;
 }
