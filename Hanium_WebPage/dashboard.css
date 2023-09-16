@@ -139,8 +139,41 @@ h1 {
   margin: 10px; /* 차트 간의 간격 조절 */
 }
 
+<<<<<<< HEAD
+.width-height {
+  width: 350px;
+  height: 250px;
+}
+/*front/back 폰트 및 배경*/
+.dropdown-list {
+  text-align:center;
+  color:white;
+  background-color: rgb(0, 128, 255);
+  padding:0.6rem;
+  margin:0;
+  font-size:17px;
+}
+/*front/back 구분선*/
+.dropdown-list_hr {
+  border: 1px solid rgb(0, 128, 255);
+  margin  : 0px;
+}
+/*인원 폰트 및 배경*/
+.dropdown-item{
+  margin:0.4rem;
+  padding:0.6rem;
+}
+.dropdown-item_hr{
+  margin:0;
+}
+.dropdown-menu{
+  margin:0;
+  border:0;
+  padding:0;
+=======
 .width-height {/*chart 크기조절*/
   
   width: 21.875em;
   height: 15.625em;
+>>>>>>> 4e524868a88c94b940532be0c2c040643b2df3f4
 }
