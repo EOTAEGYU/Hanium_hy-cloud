@@ -139,6 +139,7 @@ h1 {
   margin: 10px; /* 차트 간의 간격 조절 */
 }
 
+<<<<<<< HEAD
 .width-height {
   width: 350px;
   height: 250px;
@@ -169,4 +170,9 @@ h1 {
   margin:0;
   border:0;
   padding:0;
+=======
+.width-height {/*chart 크기조절*/
+  width: 21.875em;
+  height: 15.625em;
+>>>>>>> 4e524868a88c94b940532be0c2c040643b2df3f4
 }

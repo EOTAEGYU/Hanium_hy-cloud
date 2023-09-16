@@ -210,8 +210,8 @@
         <h1>한이음 이기종 클라우드 모니터링 페이지</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">AWS</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">GCP</button>
+            <button onclick="showAWS()" class="btn btn-sm btn-primary">AWS</button>
+            <button onclick="showGCP()"  class="btn btn-sm btn-outline-secondary">GCP</button>
           </div>
           <button id="dataDisplay" onclick="showData()" class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
             <svg class="bi"><use xlink:href="#calendar3"/></svg>
@@ -221,23 +221,29 @@
       <!-- 대시보드 div -->
       <div class="row">
           <div class="chart-col">
-            <canvas id="myChart" class="width-height"></canvas>
+            <canvas id="AChart" class="width-height"></canvas>
+            <canvas id="GChart" class="width-height"></canvas>
           </div>
           <div class="chart-col">
-            <canvas id="myChart1" class="width-height"></canvas>
+            <canvas id="AChart1" class="width-height"></canvas>
+            <canvas id="GChart1" class="width-height"></canvas>
           </div>
           <div class="chart-col">
-            <canvas id="myChart2" class="width-height"></canvas>
+            <canvas id="AChart2" class="width-height"></canvas>
+            <canvas id="GChart2" class="width-height"></canvas>
           </div>
         
           <div class="chart-col">
-            <canvas id="myChart3" class="width-height"></canvas>
+            <canvas id="AChart3" class="width-height"></canvas>
+            <canvas id="GChart3" class="width-height"></canvas>
           </div>
           <div class="chart-col">
-            <canvas id="myChart4" class="width-height"></canvas>
+            <canvas id="AChart4" class="width-height"></canvas>
+            <canvas id="GChart4" class="width-height"></canvas>
           </div>
           <div class="chart-col">
-            <canvas id="myChart5" class="width-height"></canvas>
+            <canvas id="AChart5" class="width-height"></canvas>
+            <canvas id="GChart5" class="width-height"></canvas>
           </div>
         </div>
       </div>
