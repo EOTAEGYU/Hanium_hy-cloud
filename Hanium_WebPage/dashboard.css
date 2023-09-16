@@ -139,7 +139,7 @@ h1 {
   margin: 10px; /* 차트 간의 간격 조절 */
 }
 
-.width-height {
+.width-height {/*chart 크기조절*/
   width: 350px;
   height: 250px;
 }
