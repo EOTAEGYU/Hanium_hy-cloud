@@ -138,3 +138,8 @@ h1 {
   flex: 1; /* 각 열의 너비를 동일하게 설정 */
   margin: 10px; /* 차트 간의 간격 조절 */
 }
+
+.width-height {
+  width: 25%;
+  height: 25%;
+}
