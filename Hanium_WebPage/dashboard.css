@@ -143,3 +143,30 @@ h1 {
   width: 350px;
   height: 250px;
 }
+/*front/back 폰트 및 배경*/
+.dropdown-list {
+  text-align:center;
+  color:white;
+  background-color: rgb(0, 128, 255);
+  padding:0.6rem;
+  margin:0;
+  font-size:17px;
+}
+/*front/back 구분선*/
+.dropdown-list_hr {
+  border: 1px solid rgb(0, 128, 255);
+  margin  : 0px;
+}
+/*인원 폰트 및 배경*/
+.dropdown-item{
+  margin:0.4rem;
+  padding:0.6rem;
+}
+.dropdown-item_hr{
+  margin:0;
+}
+.dropdown-menu{
+  margin:0;
+  border:0;
+  padding:0;
+}
