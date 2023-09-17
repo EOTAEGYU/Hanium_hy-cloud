@@ -11,7 +11,13 @@
         labels: [
           'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
-          data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+          data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+          response.json()
+        ).then((res)=>{
+          console.log(res.data);
+        }).catch((err)=>{
+          console.log(err);
+        })],
           label: "CPU",
           lineTension: 0,
           backgroundColor: 'transparent',
@@ -20,7 +26,13 @@
           pointBackgroundColor: '#007bff'
         }, {
           type: 'line',
-          data: [12034, 24092, 23489, 23489, 24003, 18483, 21345, 15339],
+          data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+          response.json()
+        ).then((res)=>{
+          console.log(res.data);
+        }).catch((err)=>{
+          console.log(err);
+        })],
           label: "Memory",
           fill: false, // 채우기없음
           lineTension: 0,
@@ -58,7 +70,9 @@
         labels: [
           'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
-          data: [25000, 23045, 12483, 14003, 13489, 14092, 22034],
+          data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+          console.log(response)
+        )],
           label: "CPU",
           lineTension: 0,
           backgroundColor: 'transparent',
@@ -67,7 +81,9 @@
           pointBackgroundColor: '#007bff'
         }, {
           type: 'line',
-          data: [22034, 14092, 13489, 13489, 14003, 12483, 11345, 25339],
+          data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+          console.log(response)
+        )],
           label: "Memory",
           fill: false, // 채우기없음
           lineTension: 0,
