@@ -160,8 +160,8 @@ h1 {
 }
 /*인원 폰트 및 배경*/
 .dropdown-item{
-  margin:0.4rem;
-  padding:0.6rem;
+  margin:0;
+  padding:0.8rem;
 }
 .dropdown-item_hr{
   margin:0;
@@ -170,6 +170,16 @@ h1 {
   margin:0;
   border:0;
   padding:0;
+}
+.cards{
+  background-image: url("github11.png");
+  background-position: 95px 2px;
+  background-size: 60px 47px;
+  background-repeat: no-repeat;
+}
+
+
+
 =======
 .width-height {/*chart 크기조절*/
   width: 21.875em;

@@ -158,63 +158,55 @@
         </div>
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
           <ul class="nav flex-column">
-
-            <li class="nav-item" onmouseover="showPopup(1)" onmouseout="hidePopup(1)">
+            <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                  필요한 세부사항 추가 예정1
+                <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                필요한 세부사항 추가 예정1
               </a>
-              <div id="popup1" class="popup" style="display: none;">
-                      안녕
-              </div>
             </li>
-            <li class="nav-item" onmouseover="showPopup(2)" onmouseout="hidePopup(2)">
+            <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                  필요한 세부사항 추가 예정1
+                <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                필요한 세부사항 추가 예정2
               </a>
-              <div id="popup2" class="popup" style="display: none;">
-                  안녕
-              </div>
-            </li>
-
-            <li class="nav-item" onmouseover="showPopup(3)" onmouseout="hidePopup(3)">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                  필요한 세부사항 추가 예정1
-              </a>
-              <div id="popup3" class="popup" style="display: none;">
-                  안녕
-              </div>
-            </li>
-
-            <li class="nav-item" onmouseover="showPopup(4)" onmouseout="hidePopup(4)">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                  필요한 세부사항 추가 예정1
-              </a>
-              <div id="popup4" class="popup" style="display: none;">
-                  안녕
-              </div>
-            </li>
-
               <script>
-                function showPopup(index) {
-                    // 해당 인덱스의 팝업을 보이도록 스타일을 변경
-                    document.getElementById(`popup${index}`).style.display = 'block';
-                }
-            
-                function hidePopup(index) {
-                    // 해당 인덱스의 팝업을 숨기도록 스타일을 변경
-                    document.getElementById(`popup${index}`).style.display = 'none';
-                }
+                  document.addEventListener("DOMContentLoaded", function() {
+                    const navItems = document.querySelectorAll(".nav-item");
+
+                    navItems.forEach((item) => {
+                      item.addEventListener("mouseover", function() {
+                      });
+                    });
+                  });
               </script>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                필요한 세부사항 추가 예정3
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                필요한 세부사항 추가 예정4
+              </a>
+            </li>
+
+            <script>
+              function showPopup(index) {
+                  // 해당 인덱스의 팝업을 보이도록 스타일을 변경
+                  document.getElementById(`popup${index}`).style.display = 'block';
+              }
+          
+              function hidePopup(index) {
+                  // 해당 인덱스의 팝업을 숨기도록 스타일을 변경
+                  document.getElementById(`popup${index}`).style.display = 'none';
+              }
+          </script>
+
+
             </ul> 
-
-
-
-
-
             <hr>
               <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 People
