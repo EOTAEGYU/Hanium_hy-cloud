@@ -147,7 +147,7 @@ h1 {
 .dropdown-list {
   text-align:center;
   color:white;
-  background-color: rgb(0, 128, 255);
+  background-color: rgb(50, 135, 214);
   padding:0.6rem;
   margin:0;
   font-size:17px;
@@ -159,7 +159,7 @@ h1 {
 }
 /*인원 폰트 및 배경*/
 .dropdown-item{
-  margin:0;
+  margin-left:15px;
   border:0;
   padding:0.8rem 0.8rem 0.8rem 0.4rem;
   text-align:left;
@@ -180,15 +180,52 @@ h1 {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
-.cards{
+.image_git{
     background-image: url("github11.png");
-    background-position: 107px 5px;
+    background-position: 70px 5px;
     background-size: 45px 40px;
     background-repeat: no-repeat;
 }
-
+.image_front{
+  background-image: url("backend.png");
+  background-position: 5px 5px;
+  background-size: 45px 40px;
+  background-repeat: no-repeat;
+}
 h1 {
   font-family:monospace
 }
 
 
+.cpu{
+  text-align:left;
+  color:white;
+  padding:0px;
+  margin-bottom:10px;
+  font-size: 20px;
+}
+.toplist{
+  margin: 5px 5px 5px 10  px;
+}
+
+
+.square{
+  width: 30px; /* 너비 조절 */
+  height: 30px; /* 높이 조절 */
+  background-color: red;
+  display:inline-block; 
+  margin:10px 5px 0px 10px; /* 사각형과 텍스트 사이 간격 조절 */
+  position: relative;
+  top: 10px; /* 위로 5px 이동 */
+  left: 0px; /* 왼쪽으로 10px 이동 */
+}
+.square2{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(99, 107, 217);
+  display:inline-block; 
+  margin: 10px 0px 0px 10px; /* 사각형과 텍스트 사이 간격 조절 */
+  position: relative;
+  top: 10px; /* 위로 5px 이동 */
+  left: 0px; /* 왼쪽으로 10px 이동 */
+}
