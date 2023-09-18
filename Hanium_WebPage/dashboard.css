@@ -134,6 +134,15 @@ h1 {
   justify-content: space-between; /* 열 사이의 간격 조절 */
 }
 
+.chart-col {
+  flex: 1; /* 각 열의 너비를 동일하게 설정 */
+  margin: 10px; /* 차트 간의 간격 조절 */
+}
+
+.width-height {
+  width: 350px;
+  height: 250px;
+}
 /*front/back 폰트 및 배경*/
 .dropdown-list {
   text-align:center;
