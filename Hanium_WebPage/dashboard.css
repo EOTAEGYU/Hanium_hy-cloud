@@ -139,7 +139,6 @@ h1 {
   margin: 10px; /* 차트 간의 간격 조절 */
 }
 
-<<<<<<< HEAD
 .width-height {
   width: 350px;
   height: 250px;
@@ -170,9 +169,22 @@ h1 {
   margin:0;
   border:0;
   padding:0;
-=======
-.width-height {/*chart 크기조절*/
-  width: 21.875em;
-  height: 15.625em;
->>>>>>> 4e524868a88c94b940532be0c2c040643b2df3f4
+}
+
+.chart-div {
+  border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-family:'Pretendard-Regular'
+}
+
+@font-face {
+  font-family:'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }

@@ -10,9 +10,7 @@
     <title>Hanium Heterogeneous Coloud Monitoring</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
-
     
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> <!--boostrap-->
@@ -206,48 +204,50 @@
     </div>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1>한이음 이기종 클라우드 모니터링 페이지</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group me-2">
-            <button onclick="showAWS()" class="btn btn-sm btn-primary">AWS</button>
-            <button onclick="showGCP()"  class="btn btn-sm btn-outline-secondary">GCP</button>
+      <div class="container-fluid"> <!-- container-fluid 추가 -->
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1>한이음 이기종 클라우드 모니터링 페이지</h1>
+              <div class="btn-toolbar mb-2 b-md-0">
+                  <div class="btn-group me-2">
+                      <button onclick="showAWS()" class="btn btn-sm btn-primary">AWS</button>
+                      <button onclick="showGCP()" class="btn btn-sm btn-outline-secondary">GCP</button>
+                  </div>
+                  <button id="dataDisplay" onclick="showData()" class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
+                      <svg class="bi"><use xlink:href="#calendar3"/></svg>실시간 날짜 확인하기
+                  </button>
+              </div>
           </div>
-          <button id="dataDisplay" onclick="showData()" class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
-            <svg class="bi"><use xlink:href="#calendar3"/></svg>
-          </button>
-        </div>
+  
+          <!-- 대시보드 div -->
+          <div class="row"> <!-- row 추가 -->
+              <div class="col-6"> <!-- col 클래스 추가 -->
+                  <canvas id="AChart" class="chart-div"></canvas>
+                  <canvas id="GChart" class="chart-div"></canvas>
+              </div>
+              <div class="col-6"> <!-- col 클래스 추가 -->
+                  <canvas id="AChart1" class="chart-div"></canvas>
+                  <canvas id="GChart1" class="chart-div"></canvas>
+              </div>
+              <div class=" col-6"> <!-- col 클래스 추가 -->
+                  <canvas id="AChart2" class="chart-div"></canvas>
+                  <canvas id="GChart2" class="chart-div"></canvas>
+              </div>
+              <div class="col-6"> <!-- col 클래스 추가 -->
+                  <canvas id="AChart3" class="chart-div"></canvas>
+                  <canvas id="GChart3" class="chart-div"></canvas>
+              </div>
+              <div class="col-6"> <!-- col 클래스 추가 -->
+                  <canvas id="AChart4" class="chart-div"></canvas>
+                  <canvas id="GChart4" class="chart-div"></canvas>
+              </div>
+              <div class="col-6"> <!-- col 클래스 추가 -->
+                  <canvas id="AChart5" class="chart-div"></canvas>
+                  <canvas id="GChart5" class="chart-div"></canvas>
+              </div>
+          </div>
       </div>
-      <!-- 대시보드 div -->
-      <div class="row">
-          <div class="chart-col">
-            <canvas id="AChart" class="width-height"></canvas>
-            <canvas id="GChart" class="width-height"></canvas>
-          </div>
-          <div class="chart-col">
-            <canvas id="AChart1" class="width-height"></canvas>
-            <canvas id="GChart1" class="width-height"></canvas>
-          </div>
-          <div class="chart-col">
-            <canvas id="AChart2" class="width-height"></canvas>
-            <canvas id="GChart2" class="width-height"></canvas>
-          </div>
-        
-          <div class="chart-col">
-            <canvas id="AChart3" class="width-height"></canvas>
-            <canvas id="GChart3" class="width-height"></canvas>
-          </div>
-          <div class="chart-col">
-            <canvas id="AChart4" class="width-height"></canvas>
-            <canvas id="GChart4" class="width-height"></canvas>
-          </div>
-          <div class="chart-col">
-            <canvas id="AChart5" class="width-height"></canvas>
-            <canvas id="GChart5" class="width-height"></canvas>
-          </div>
-        </div>
-      </div>
-    </main>
+  </main>
+  
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
