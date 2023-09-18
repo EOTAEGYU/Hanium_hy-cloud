@@ -1,0 +1,11 @@
+CREATE TABLE monitor (
+	uid INT NOT NULL AUTO_INCREMENT,
+	time_key VARCHAR(50) ,
+	`time` VARCHAR(50) ,
+	vendor VARCHAR(50) ,
+	instance_id VARCHAR(50) ,
+	instance_name VARCHAR(50) ,
+	metric VARCHAR(50),
+	`value` FLOAT(12),
+	PRIMARY KEY (uid)
+	);

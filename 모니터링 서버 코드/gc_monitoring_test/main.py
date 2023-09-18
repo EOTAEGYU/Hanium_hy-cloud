@@ -7,29 +7,29 @@ if __name__ == '__main__':
     myfunc = sys._getframe().f_code.co_name
     rest_client = RestClient.RestClient()
 
-    # ###########################################################################################
-    # # GCP 모니터링
-    # print("#########################")
-    # print("# GCP 모니터링")
-    #
-    # gcp.set_credentials('C:\\Temp\\poc-jhlee-cadc73bf2cce.json') # gcp service account 에서 생성한 json 키 파일 경로 입력
-    #
-    # project_id = "poc-jhlee"
-    # results = gcp.get_cpu_utilization(project_id)
-    # for result in results:
-    #     print(result)
-    #     response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
-    #
-    #
-    # results = gcp.get_memory_utilization(project_id)
-    # for result in results:
-    #     print(result)
-    #     response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
-    #
-    #
-    # result = gcp.get_process_status(project_id, "3361798994575063946", "./test 12345")
-    # print(result)
-    # response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
+    ###########################################################################################
+    # GCP 모니터링
+    print("#########################")
+    print("# GCP 모니터링")
+
+    gcp.set_credentials('C:\\Temp\\poc-jhlee-cadc73bf2cce.json') # gcp service account 에서 생성한 json 키 파일 경로 입력
+
+    project_id = "poc-jhlee"
+    results = gcp.get_cpu_utilization(project_id)
+    for result in results:
+        print(result)
+        response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
+
+
+    results = gcp.get_memory_utilization(project_id)
+    for result in results:
+        print(result)
+        response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
+
+
+    result = gcp.get_process_status(project_id, "3361798994575063946", "./test 12345")
+    print(result)
+    response = rest_client.restapi_post("http://127.0.0.1:8000/monitor_info", result)
 
 
     ###########################################################################################
