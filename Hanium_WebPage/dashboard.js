@@ -18,6 +18,7 @@
           borderColor: '#007bff',
           borderWidth: 4,
           pointBackgroundColor: '#007bff'
+          
         }, {
           type: 'line',
           data: [12034, 24092, 23489, 23489, 24003, 18483, 21345, 15339],
@@ -159,14 +160,10 @@ let isDateShown = false;  // 상태를 추적하는 전역 변수
 
 function showData() {
   const dataDisplayElement = document.getElementById('dataDisplay');
-  
-  if (isDateShown) {
-    dataDisplayElement.innerText = "Today";  // 날짜 정보 숨기기
-  } else {
     const currentDate = new Date();
     const dateString = currentDate.toLocaleDateString() + " " + currentDate.toLocaleTimeString();
     dataDisplayElement.innerText = dateString;  // 날짜 정보 표시
-  }
+    setInterval(showData, 1000); //1초에 한 번씩 showdata 함수 호출
 
   isDateShown = !isDateShown;  // 상태 전환
 }

@@ -134,16 +134,6 @@ h1 {
   justify-content: space-between; /* 열 사이의 간격 조절 */
 }
 
-.chart-col {
-  flex: 1; /* 각 열의 너비를 동일하게 설정 */
-  margin: 10px; /* 차트 간의 간격 조절 */
-}
-
-<<<<<<< HEAD
-.width-height {
-  width: 350px;
-  height: 250px;
-}
 /*front/back 폰트 및 배경*/
 .dropdown-list {
   text-align:center;
@@ -161,8 +151,11 @@ h1 {
 /*인원 폰트 및 배경*/
 .dropdown-item{
   margin:0;
-  padding:0.8rem;
+  border:0;
+  padding:0.8rem 0.8rem 0.8rem 0.4rem;
+  text-align:left;
 }
+
 .dropdown-item_hr{
   margin:0;
 }
@@ -171,18 +164,22 @@ h1 {
   border:0;
   padding:0;
 }
+
+.chart-div {
+  border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
 .cards{
-  background-image: url("github11.png");
-  background-position: 95px 2px;
-  background-size: 60px 47px;
-  background-repeat: no-repeat;
+    background-image: url("github11.png");
+    background-position: 107px 5px;
+    background-size: 45px 40px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+  font-family:monospace
 }
 
 
-
-=======
-.width-height {/*chart 크기조절*/
-  width: 21.875em;
-  height: 15.625em;
->>>>>>> 4e524868a88c94b940532be0c2c040643b2df3f4
-}
