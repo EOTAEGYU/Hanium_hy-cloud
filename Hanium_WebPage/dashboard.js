@@ -1,43 +1,43 @@
 /* globals Chart:false */
 
 //주기적으로 서버에서 데이터 가져오기
+/*
 function fetchData() {
   return fetch("http://3.37.10.77:8000/monitor_info")
       .then(response => response.json())
       .then((data)=>{console.log(data)})
       .catch(err => console.error(err));
 }
-
-
-
+*/
 
 (() => {
   'use strict'
   //가져온 데이터로 차트 업데이트
   function updateChartWithData() {
-    const chartAWSIds = ['AChart', 'AChart1', 'AChart2', 'AChart3', 'AChart4', 'AChart5'];
 
+    const chartAWSIds = ['AChart', 'AChart1', 'AChart2', 'AChart3', 'AChart4', 'AChart5'];
     chartAWSIds.forEach(id => {
       const ctxaws = document.getElementById(id);
-      createAWS(ctxaws);
+      const chartA = createAWS(ctxaws);
+      chartA.destroy(ctxaws);
     });
-    const chartGCPIds = ['GChart', 'GChart1', 'GChart2', 'GChart3', 'GChart4', 'GChart5'];
 
+    const chartGCPIds = ['GChart', 'GChart1', 'GChart2', 'GChart3', 'GChart4', 'GChart5'];
     chartGCPIds.forEach(id => {
       const ctxgcp = document.getElementById(id);
-      createGCP(ctxgcp);
-      
+      const chartB = createGCP(ctxgcp);
+      chartB.destroy(ctxgcp);
     });
   }
+  
   //aws 차트
   function createAWS(ctxaws) {
     return new Chart(ctxaws, {
       type: 'line',
       data: {
-        labels: [
-          'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets: [{
-            data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+            data: [fetch("http://3.37.10.77:8000/monitor_info?vender=aws").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -53,7 +53,7 @@ function fetchData() {
           
         }, {
           type: 'line',
-          data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vender=aws").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -87,10 +87,9 @@ function fetchData() {
     return new Chart(ctxgcp, {
       type: 'line',
       data: {
-        labels: [
-          'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets: [{
-            data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+            data: [fetch("http://3.37.10.77:8000/monitor_info?vender=gcp").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -105,7 +104,7 @@ function fetchData() {
           pointBackgroundColor: '#007bff'
         }, {
           type: 'line',
-          data: [fetch("http://3.37.10.77:8000/monitor_info").then((response) =>
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vender=gcp").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
