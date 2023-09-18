@@ -21,6 +21,7 @@
     <link href="dashboard.css" rel="stylesheet">
   </head>
   <body>
+    
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -144,6 +145,9 @@
   </div>
 </header>
 
+<div class ="cards"></div>
+
+
 <div class="container-fluid">
   <div class="row">
     <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
@@ -153,33 +157,20 @@
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정1
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정2
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정3
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정4
-              </a>
-            </li>
 
-            </ul> 
+          <ul class="nav flex-column">
+            <li class="cpu  ">
+              <span class="square"></span>cpu <span class="square2"></span> memory </li>
+            <li class="toplist ">가로 축 : ()세로 축 : ()</li>
+            <li class="toplist">모니터링 수: 6개</li>
+            <li class="toplist"></li>
+
+          </ul> 
+
+
+
+
+
             <hr>
               <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 People
@@ -187,16 +178,16 @@
               <ul class="dropdown-menu">
                 <li class="dropdown-list">Frontend</li>
                 <hr class="dropdown-list_hr">
-                <li><a class="dropdown-item" href="https://www.naver.com">이홍교</a></li>
+                <li><a class="dropdown-item image_git" href="https://github.com/leehongyo">이홍교 </a></li>
                 <hr class="dropdown-item_hr">
-                <li><a class="dropdown-item" href="https://www.naver.com">곽지훈</a></li>
+                <li><a class="dropdown-item image_git" href="https://github.com/jihoon135">곽지훈 </a></li>
                 <hr class="dropdown-item_hr">
-                <li><a class="dropdown-item" href="https://www.naver.com">박재현</a></li>
-                <li class="dropdown-list">Backend</li>
-                <hr class="dropdown-list_hr">
-                <li><a class="dropdown-item" href="https://www.naver.com">어태규</a></li>
+                <li><a class="dropdown-item image_git" href="https://github.com/pjh813">박재현 </a></li>
+                <li class="dropdown-list ">Backend</li>
+                <hr class="dropdown-list_hr ">
+                <li><a class="dropdown-item image_git" href="https://github.com/EOTAEGYUa"> 어태규</a> </li>
                 <hr class="dropdown-item_hr">
-                <li><a class="dropdown-item" href="https://www.naver.com">김성연</a></li>
+                <li><a class="dropdown-item image_git" href="https://github.com/tjddus5767">김성연 </a></li>
               </ul>
              
         </div>
