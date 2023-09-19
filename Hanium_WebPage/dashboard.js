@@ -33,11 +33,12 @@ function fetchData() {
   //aws 차트
   function createAWS(ctxaws) {
     return new Chart(ctxaws, {
+      //chartid: chartA, 
       type: 'line',
       data: {
         labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets: [{
-            data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) =>
+            data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) => //주기적으로 서버에서 데이터 가져오기
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -53,7 +54,7 @@ function fetchData() {
           
         }, {
           type: 'line',
-          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) =>
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) => //주기적으로 서버에서 데이터 가져오기
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -80,16 +81,19 @@ function fetchData() {
         }
       }
     });
+  
+    
   }
 
   //gcp 차트
   function createGCP(ctxgcp) {
     return new Chart(ctxgcp, {
+      //chartid: chartB,
       type: 'line',
       data: {
         labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets: [{
-            data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) =>
+            data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) => //주기적으로 서버에서 데이터 가져오기
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -104,7 +108,7 @@ function fetchData() {
           pointBackgroundColor: '#007bff'
         }, {
           type: 'line',
-          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) =>
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) => //주기적으로 서버에서 데이터 가져오기
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -131,9 +135,69 @@ function fetchData() {
         }
       }
     });
-  }
 
+    
+  }
   
+  function addData(chartInstance, label, newData) {
+    chartInstance.data.labels.push(label);
+    chartInstance.data.datasets.forEach((dataset) => {
+        dataset.data.push(newData);
+    });
+    chartInstance.update();
+}
+
+function removeData(chartInstance) {
+    chartInstance.data.labels.pop();
+    chartInstance.data.datasets.forEach((dataset) => {
+        dataset.data.pop();
+    });
+    chartInstance.update();
+}
+
+// 전역 변수를 사용하여 차트 인스턴스를 저장합니다.
+let awsChartInstances = {};
+let gcpChartInstances = {};
+
+// AWS용 setInterval 함수
+setInterval(function() {
+  let newLabel = new Date().toLocaleTimeString();
+  let newData = Math.random() * 100;
+
+  const chartAWSIds = ['AChart', 'AChart1', 'AChart2', 'AChart3', 'AChart4', 'AChart5'];
+  chartAWSIds.forEach(id => {
+    if (awsChartInstances[id]) {
+      awsChartInstances[id].destroy();
+    }
+    
+    awsChartInstances[id] = createAWS(document.getElementById(id));
+    addData(awsChartInstances[id], newLabel, newData);
+
+    if (awsChartInstances[id].data.labels.length > 10) {  
+        removeData(awsChartInstances[id]);
+    }
+  });
+}, 1000);
+
+setInterval(function() {
+  let newLabel = new Date().toLocaleTimeString();
+  let newData = Math.random() * 100;
+
+  const chartGCPIds = ['GChart', 'GChart1', 'GChart2', 'GChart3', 'GChart4', 'GChart5'];
+  chartGCPIds.forEach(id => {
+    if (gcpChartInstances[id]) {
+      gcpChartInstances[id].destroy();
+    }
+    
+    gcpChartInstances[id] = createGCP(document.getElementById(id));
+    addData(gcpChartInstances[id], newLabel, newData);
+
+    if (gcpChartInstances[id].data.labels.length > 10) {  
+        removeData(gcpChartInstances[id]);
+    }
+  });
+}, 1000);
+
 
 // 주기적으로 차트 업데이트(5초마다)
 setInterval(() => {
@@ -211,11 +275,3 @@ function showData() {
 
 //디폴트로 aws를 화면에 보여줌
 showAWS();
-
-
-
-
-
-
-
-
