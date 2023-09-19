@@ -37,7 +37,7 @@ function fetchData() {
       data: {
         labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets: [{
-            data: [fetch("http://3.37.10.77:8000/monitor_info?vender=aws").then((response) =>
+            data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -53,7 +53,7 @@ function fetchData() {
           
         }, {
           type: 'line',
-          data: [fetch("http://3.37.10.77:8000/monitor_info?vender=aws").then((response) =>
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -89,7 +89,7 @@ function fetchData() {
       data: {
         labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets: [{
-            data: [fetch("http://3.37.10.77:8000/monitor_info?vender=gcp").then((response) =>
+            data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
@@ -104,7 +104,7 @@ function fetchData() {
           pointBackgroundColor: '#007bff'
         }, {
           type: 'line',
-          data: [fetch("http://3.37.10.77:8000/monitor_info?vender=gcp").then((response) =>
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) =>
             response.json()
           ).then((res)=>{
             console.log(res.data);
