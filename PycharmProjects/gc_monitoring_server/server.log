@@ -1,0 +1,373 @@
+[2023-06-30 11:07:20,656][PID:52152][INFO] version: 1.0.0
+[2023-06-30 11:07:20,949][PID:52152][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:07:20,949][PID:52152][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:07:23,365][PID:48632][INFO] version: 1.0.0
+[2023-06-30 11:07:23,680][PID:48632][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:07:23,681][PID:48632][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:10:29,644][PID:54688][INFO] version: 1.0.0
+[2023-06-30 11:10:29,826][PID:54688][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:10:29,837][PID:54688][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:10:31,691][PID:32704][INFO] version: 1.0.0
+[2023-06-30 11:10:31,897][PID:32704][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:10:31,897][PID:32704][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:10:34,828][PID:32344][INFO] version: 1.0.0
+[2023-06-30 11:10:34,024][PID:32344][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:10:34,024][PID:32344][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:13:38,758][PID:32344][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=0.0 time='2023-06-30 11:13:38 AM' time_key='20230630111338'
+[2023-06-30 11:13:38,758][PID:32344][ERROR] [post_monitor_info] Exception err:'tuple' object has no attribute 'vendor', data:{}
+[2023-06-30 11:13:38,774][PID:32344][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=0.0 time='2023-06-30 11:13:38 AM' time_key='20230630111338'
+[2023-06-30 11:13:38,775][PID:32344][ERROR] [post_monitor_info] Exception err:'tuple' object has no attribute 'vendor', data:{}
+[2023-06-30 11:13:41,183][PID:44676][INFO] version: 1.0.0
+[2023-06-30 11:13:41,392][PID:44676][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:13:41,392][PID:44676][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:13:48,216][PID:44676][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=0.0 time='2023-06-30 11:13:47 AM' time_key='20230630111347'
+[2023-06-30 11:13:48,216][PID:44676][ERROR] [post_monitor_info] Exception err:'tuple' object has no attribute 'vendor', data:{}
+[2023-06-30 11:13:48,228][PID:44676][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=0.1 time='2023-06-30 11:13:47 AM' time_key='20230630111347'
+[2023-06-30 11:13:48,240][PID:44676][ERROR] [post_monitor_info] Exception err:'tuple' object has no attribute 'vendor', data:{}
+[2023-06-30 11:15:35,051][PID:25472][INFO] version: 1.0.0
+[2023-06-30 11:15:35,219][PID:25472][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:15:35,219][PID:25472][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:15:37,794][PID:21996][INFO] version: 1.0.0
+[2023-06-30 11:15:37,022][PID:21996][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:15:37,022][PID:21996][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:28:54,371][PID:46632][INFO] version: 1.0.0
+[2023-06-30 11:28:54,630][PID:46632][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:28:54,631][PID:46632][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:28:56,286][PID:53680][INFO] version: 1.0.0
+[2023-06-30 11:28:56,532][PID:53680][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 11:28:56,533][PID:53680][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 11:28:58,957][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=0.1 time='2023-06-30 11:28:58 AM' time_key='20230630112858'
+[2023-06-30 11:28:58,963][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=0.0 time='2023-06-30 11:28:58 AM' time_key='20230630112858'
+[2023-06-30 11:29:34,579][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=0.1 time='2023-06-30 11:29:34 AM' time_key='20230630112934'
+[2023-06-30 11:29:34,584][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=0.0 time='2023-06-30 11:29:34 AM' time_key='20230630112934'
+[2023-06-30 11:29:34,976][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=38.9 time='2023-06-30 11:29:34 AM' time_key='20230630112934'
+[2023-06-30 11:29:34,981][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=34.7 time='2023-06-30 11:29:34 AM' time_key='20230630112934'
+[2023-06-30 11:29:55,280][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='cpu' value=0.1 time='2023-06-30 11:29:54 AM' time_key='20230630112954'
+[2023-06-30 11:29:55,284][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='cpu' value=0.1 time='2023-06-30 11:29:54 AM' time_key='20230630112954'
+[2023-06-30 11:29:55,770][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=38.9 time='2023-06-30 11:29:55 AM' time_key='20230630112955'
+[2023-06-30 11:29:55,775][PID:53680][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=34.6 time='2023-06-30 11:29:55 AM' time_key='20230630112955'
+[2023-06-30 12:38:05,536][PID:41512][INFO] version: 1.0.0
+[2023-06-30 12:38:05,751][PID:41512][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 12:38:05,751][PID:41512][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 12:38:08,866][PID:44608][INFO] version: 1.0.0
+[2023-06-30 12:38:08,089][PID:44608][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 12:38:08,089][PID:44608][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 12:38:08,387][PID:44608][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='cpu' value=0.1 time='2023-06-30 12:38:07 PM' time_key='20230630123807'
+[2023-06-30 12:38:08,430][PID:44608][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:38:08,431][PID:44608][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:38:08,431][PID:44608][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:38:08,435][PID:44608][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:38:08,443][PID:44608][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:38:08,449][PID:44608][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='cpu' value=0.0 time='2023-06-30 12:38:07 PM' time_key='20230630123807'
+[2023-06-30 12:38:08,487][PID:44608][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:38:08,488][PID:44608][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:38:08,488][PID:44608][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:38:08,491][PID:44608][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:38:08,498][PID:44608][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:38:08,902][PID:44608][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=38.9 time='2023-06-30 12:38:08 PM' time_key='20230630123808'
+[2023-06-30 12:38:08,945][PID:44608][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:38:08,946][PID:44608][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:38:08,946][PID:44608][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:38:08,950][PID:44608][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:38:08,983][PID:44608][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:38:08,987][PID:44608][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=33.7 time='2023-06-30 12:38:08 PM' time_key='20230630123808'
+[2023-06-30 12:38:09,020][PID:44608][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:38:09,020][PID:44608][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:38:09,021][PID:44608][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:38:09,025][PID:44608][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:38:09,048][PID:44608][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:41:07,707][PID:54624][INFO] version: 1.0.0
+[2023-06-30 12:41:07,956][PID:54624][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 12:41:07,956][PID:54624][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 12:41:10,298][PID:36004][INFO] version: 1.0.0
+[2023-06-30 12:41:10,626][PID:36004][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 12:41:10,627][PID:36004][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 12:41:12,163][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='cpu' value=0.0 time='2023-06-30 12:41:11 PM' time_key='20230630124111'
+[2023-06-30 12:41:12,199][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:41:12,200][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:41:12,200][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:41:12,204][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:41:12,212][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:41:12,217][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='cpu' value=0.1 time='2023-06-30 12:41:11 PM' time_key='20230630124111'
+[2023-06-30 12:41:12,234][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:41:12,235][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:41:12,235][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:41:12,238][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:41:12,244][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:41:12,632][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=38.9 time='2023-06-30 12:41:12 PM' time_key='20230630124112'
+[2023-06-30 12:41:12,668][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:41:12,669][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:41:12,669][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:41:12,674][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:41:12,681][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:41:12,686][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=33.7 time='2023-06-30 12:41:12 PM' time_key='20230630124112'
+[2023-06-30 12:41:12,716][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:41:12,717][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:41:12,717][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:41:12,723][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:41:12,730][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:45:42,519][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='cpu' value=0.1 time='2023-06-30 12:45:41 PM' time_key='20230630124541'
+[2023-06-30 12:45:42,549][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:45:42,550][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:45:42,550][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:45:42,555][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:45:42,564][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:45:42,568][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='cpu' value=0.0 time='2023-06-30 12:45:41 PM' time_key='20230630124541'
+[2023-06-30 12:45:42,610][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:45:42,611][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:45:42,611][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:45:42,616][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:45:42,624][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:45:43,105][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=39.4 time='2023-06-30 12:45:42 PM' time_key='20230630124542'
+[2023-06-30 12:45:43,134][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:45:43,134][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:45:43,134][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:45:43,139][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:45:43,147][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:45:43,151][PID:36004][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=33.6 time='2023-06-30 12:45:42 PM' time_key='20230630124542'
+[2023-06-30 12:45:43,182][PID:36004][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:45:43,183][PID:36004][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:45:43,183][PID:36004][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:45:43,188][PID:36004][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:45:43,197][PID:36004][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:46:07,459][PID:49760][INFO] version: 1.0.0
+[2023-06-30 12:46:07,635][PID:49760][INFO] [load_config] Config file: (./config/config.xml)
+[2023-06-30 12:46:07,636][PID:49760][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-06-30 12:46:18,200][PID:49760][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='cpu' value=0.0 time='2023-06-30 12:46:17 PM' time_key='20230630124617'
+[2023-06-30 12:46:18,200][PID:49760][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3428176369747557331', 'metric': 'cpu', 'value': '0.0', 'time': '2023-06-30 12:46:17 PM', 'time_key': '20230630124617'}
+[2023-06-30 12:46:18,225][PID:49760][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:46:18,227][PID:49760][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:46:18,227][PID:49760][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:46:18,232][PID:49760][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:46:18,240][PID:49760][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:46:18,710][PID:49760][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' metric='memory' value=39.4 time='2023-06-30 12:46:18 PM' time_key='20230630124618'
+[2023-06-30 12:46:18,710][PID:49760][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'metric': 'memory', 'value': '39.4', 'time': '2023-06-30 12:46:18 PM', 'time_key': '20230630124618'}
+[2023-06-30 12:46:18,736][PID:49760][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:46:18,738][PID:49760][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:46:18,738][PID:49760][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:46:18,742][PID:49760][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:46:18,749][PID:49760][INFO] [db_close] MySQL disconnected.
+[2023-06-30 12:46:18,756][PID:49760][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3428176369747557331' metric='memory' value=33.6 time='2023-06-30 12:46:18 PM' time_key='20230630124618'
+[2023-06-30 12:46:18,757][PID:49760][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3428176369747557331', 'metric': 'memory', 'value': '33.6', 'time': '2023-06-30 12:46:18 PM', 'time_key': '20230630124618'}
+[2023-06-30 12:46:18,802][PID:49760][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-06-30 12:46:18,803][PID:49760][INFO] [db_insert] DB insert start. table(monitor) columns(6) rows(1)
+[2023-06-30 12:46:18,804][PID:49760][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s)
+[2023-06-30 12:46:18,807][PID:49760][INFO] [db_insert] DB insert success. table(monitor)
+[2023-06-30 12:46:18,815][PID:49760][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:52:46,925][PID:35056][INFO] version: 1.0.0
+[2023-08-21 15:52:46,196][PID:35056][INFO] [load_config] Config file: (./config/config.xml)
+[2023-08-21 15:52:46,196][PID:35056][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-08-21 15:52:49,236][PID:11804][INFO] version: 1.0.0
+[2023-08-21 15:52:49,767][PID:11804][INFO] [load_config] Config file: (./config/config.xml)
+[2023-08-21 15:52:49,768][PID:11804][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-08-21 15:54:46,788][PID:11804][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='cpu' value=0.2 time='2023-08-21 03:54:46 PM' time_key='20230821035446'
+[2023-08-21 15:54:46,788][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': '0.2', 'time': '2023-08-21 03:54:46 PM', 'time_key': '20230821035446'}
+[2023-08-21 15:54:46,832][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:46,834][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:46,834][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:46,841][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:46,848][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:47,247][PID:11804][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='memory' value=41.9 time='2023-08-21 03:54:46 PM' time_key='20230821035446'
+[2023-08-21 15:54:47,247][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': '41.9', 'time': '2023-08-21 03:54:46 PM', 'time_key': '20230821035446'}
+[2023-08-21 15:54:47,285][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:47,286][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:47,286][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:47,293][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:47,299][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:48,805][PID:11804][INFO] [post_monitor_info] called api. item:vendor='aws' instance_id='i-0418b4b2c14c8bdd4' instance_name='mpower-server' metric='cpu' value=95.4 time='2023-08-21 06:44:48 AM' time_key='20230821064448'
+[2023-08-21 15:54:48,805][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': '95.4', 'time': '2023-08-21 06:44:48 AM', 'time_key': '20230821064448'}
+[2023-08-21 15:54:48,858][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:48,859][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:48,859][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:48,866][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:48,874][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:48,879][PID:11804][INFO] [post_monitor_info] called api. item:vendor='aws' instance_id='i-050055ad7cbb6d5ed' instance_name='test-vm' metric='cpu' value=0.7 time='2023-08-21 06:44:48 AM' time_key='20230821064448'
+[2023-08-21 15:54:48,880][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': '0.7', 'time': '2023-08-21 06:44:48 AM', 'time_key': '20230821064448'}
+[2023-08-21 15:54:48,928][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:48,929][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:48,929][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:48,934][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:48,942][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 15:54:49,044][PID:11804][INFO] [post_monitor_info] called api. item:vendor='aws' instance_id='i-050055ad7cbb6d5ed' instance_name='test-vm' metric='memory' value=15.3 time='2023-08-21 06:49:00 AM' time_key='20230821064900'
+[2023-08-21 15:54:49,044][PID:11804][INFO] [post_monitor_info] item:{'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': '15.3', 'time': '2023-08-21 06:49:00 AM', 'time_key': '20230821064900'}
+[2023-08-21 15:54:49,073][PID:11804][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 15:54:49,074][PID:11804][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 15:54:49,075][PID:11804][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 15:54:49,081][PID:11804][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 15:54:49,089][PID:11804][INFO] [db_close] MySQL disconnected.
+[2023-08-21 16:02:47,607][PID:39808][INFO] version: 1.0.0
+[2023-08-21 16:02:47,041][PID:39808][INFO] [load_config] Config file: (./config/config.xml)
+[2023-08-21 16:02:47,042][PID:39808][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-08-21 16:02:50,171][PID:39360][INFO] version: 1.0.0
+[2023-08-21 16:02:50,478][PID:39360][INFO] [load_config] Config file: (./config/config.xml)
+[2023-08-21 16:02:50,478][PID:39360][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-08-21 16:02:55,906][PID:39360][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='cpu' value=0.3 time='2023-08-21 04:02:55 PM' time_key='20230821040255'
+[2023-08-21 16:02:55,907][PID:39360][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': '0.3', 'time': '2023-08-21 04:02:55 PM', 'time_key': '20230821040255'}
+[2023-08-21 16:02:55,946][PID:39360][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 16:02:55,949][PID:39360][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 16:02:55,949][PID:39360][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 16:02:55,976][PID:39360][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 16:02:55,988][PID:39360][INFO] [db_close] MySQL disconnected.
+[2023-08-21 16:02:56,416][PID:39360][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='memory' value=42.8 time='2023-08-21 04:02:56 PM' time_key='20230821040256'
+[2023-08-21 16:02:56,416][PID:39360][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': '42.8', 'time': '2023-08-21 04:02:56 PM', 'time_key': '20230821040256'}
+[2023-08-21 16:02:56,447][PID:39360][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-08-21 16:02:56,450][PID:39360][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-08-21 16:02:56,450][PID:39360][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-08-21 16:02:56,456][PID:39360][INFO] [db_insert] DB insert success. table(monitor)
+[2023-08-21 16:02:56,464][PID:39360][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:44:11,267][PID:27672][INFO] version: 1.0.0
+[2023-09-01 12:44:11,275][PID:27672][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:44:11,275][PID:27672][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:44:12,743][PID:27748][INFO] version: 1.0.0
+[2023-09-01 12:44:12,914][PID:27748][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:44:12,914][PID:27748][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:45:35,967][PID:39264][INFO] version: 1.0.0
+[2023-09-01 12:45:35,120][PID:39264][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:45:35,120][PID:39264][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:45:39,127][PID:26380][INFO] version: 1.0.0
+[2023-09-01 12:45:39,269][PID:26380][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:45:39,269][PID:26380][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:45:40,569][PID:30184][INFO] version: 1.0.0
+[2023-09-01 12:45:40,700][PID:30184][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:45:40,701][PID:30184][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:45:43,663][PID:30184][INFO] [get_monitor_info] called api.
+[2023-09-01 12:45:43,709][PID:30184][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:45:43,767][PID:30184][ERROR] [db_select] MySQL db_select error. err: ((1146, "Table 'monitordb.monitor_info' doesn't exist")), sql:(select * from monitor_info)
+[2023-09-01 12:45:43,767][PID:30184][ERROR] [get_monitor_info] Exception err:(1146, "Table 'monitordb.monitor_info' doesn't exist")
+[2023-09-01 12:45:43,767][PID:30184][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:46:10,885][PID:37344][INFO] version: 1.0.0
+[2023-09-01 12:46:10,020][PID:37344][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:46:10,020][PID:37344][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:46:19,230][PID:37344][INFO] [get_monitor_info] called api.
+[2023-09-01 12:46:19,259][PID:37344][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:46:19,268][PID:37344][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', {'uid': 1, 'time_key': '20230821040255', 'time': '2023-08-21 04:02:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.3}), ('pageInfo', {})])
+[2023-09-01 12:46:19,268][PID:37344][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:47:52,864][PID:39608][INFO] version: 1.0.0
+[2023-09-01 12:47:52,012][PID:39608][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:47:52,012][PID:39608][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:48:08,946][PID:37020][INFO] version: 1.0.0
+[2023-09-01 12:48:08,090][PID:37020][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:48:08,090][PID:37020][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:48:09,440][PID:12892][INFO] version: 1.0.0
+[2023-09-01 12:48:09,600][PID:12892][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:48:09,600][PID:12892][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:48:12,185][PID:12892][INFO] [get_monitor_info] called api.
+[2023-09-01 12:48:12,212][PID:12892][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:48:12,221][PID:12892][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 1, 'time_key': '20230821040255', 'time': '2023-08-21 04:02:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.3}, {'uid': 2, 'time_key': '20230821040256', 'time': '2023-08-21 04:02:56 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 42.8}, {'uid': 3, 'time_key': '20230831092513', 'time': '2023-08-31 09:25:13 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 4, 'time_key': '20230831092514', 'time': '2023-08-31 09:25:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 5, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 6, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 7, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 8, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.6}, {'uid': 9, 'time_key': '20230831122400', 'time': '2023-08-31 12:24:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 10, 'time_key': '20230831101106', 'time': '2023-08-31 10:11:06 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 11, 'time_key': '20230831101107', 'time': '2023-08-31 10:11:07 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 12, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 13, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 14, 'time_key': '20230831010600', 'time': '2023-08-31 01:06:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 15, 'time_key': '20230831104254', 'time': '2023-08-31 10:42:54 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 16, 'time_key': '20230831104255', 'time': '2023-08-31 10:42:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.1}, {'uid': 17, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.4}, {'uid': 18, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 19, 'time_key': '20230831013700', 'time': '2023-08-31 01:37:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}]), ('pageInfo', {})])
+[2023-09-01 12:48:12,222][PID:12892][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:54:10,183][PID:12892][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='cpu' value=0.1 time='2023-09-01 12:54:09 PM' time_key='20230901125409'
+[2023-09-01 12:54:10,183][PID:12892][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': '0.1', 'time': '2023-09-01 12:54:09 PM', 'time_key': '20230901125409'}
+[2023-09-01 12:54:10,211][PID:12892][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:54:10,213][PID:12892][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-09-01 12:54:10,214][PID:12892][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-09-01 12:54:10,224][PID:12892][INFO] [db_insert] DB insert success. table(monitor)
+[2023-09-01 12:54:10,233][PID:12892][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:54:13,789][PID:35756][INFO] version: 1.0.0
+[2023-09-01 12:54:13,118][PID:35756][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:54:13,119][PID:35756][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:54:13,134][PID:35756][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='memory' value=47.3 time='2023-09-01 12:54:10 PM' time_key='20230901125410'
+[2023-09-01 12:54:13,134][PID:35756][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': '47.3', 'time': '2023-09-01 12:54:10 PM', 'time_key': '20230901125410'}
+[2023-09-01 12:54:13,178][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:54:13,180][PID:35756][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-09-01 12:54:13,181][PID:35756][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-09-01 12:54:13,186][PID:35756][INFO] [db_insert] DB insert success. table(monitor)
+[2023-09-01 12:54:13,197][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:54:58,808][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:54:58,850][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:54:58,857][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 1, 'time_key': '20230821040255', 'time': '2023-08-21 04:02:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.3}, {'uid': 2, 'time_key': '20230821040256', 'time': '2023-08-21 04:02:56 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 42.8}, {'uid': 3, 'time_key': '20230831092513', 'time': '2023-08-31 09:25:13 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 4, 'time_key': '20230831092514', 'time': '2023-08-31 09:25:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 5, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 6, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 7, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 8, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.6}, {'uid': 9, 'time_key': '20230831122400', 'time': '2023-08-31 12:24:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 10, 'time_key': '20230831101106', 'time': '2023-08-31 10:11:06 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 11, 'time_key': '20230831101107', 'time': '2023-08-31 10:11:07 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 12, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 13, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 14, 'time_key': '20230831010600', 'time': '2023-08-31 01:06:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 15, 'time_key': '20230831104254', 'time': '2023-08-31 10:42:54 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 16, 'time_key': '20230831104255', 'time': '2023-08-31 10:42:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.1}, {'uid': 17, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.4}, {'uid': 18, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 19, 'time_key': '20230831013700', 'time': '2023-08-31 01:37:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:54:58,870][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:55:37,027][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:55:37,052][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:55:37,059][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 1, 'time_key': '20230821040255', 'time': '2023-08-21 04:02:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.3}, {'uid': 2, 'time_key': '20230821040256', 'time': '2023-08-21 04:02:56 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 42.8}, {'uid': 3, 'time_key': '20230831092513', 'time': '2023-08-31 09:25:13 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 4, 'time_key': '20230831092514', 'time': '2023-08-31 09:25:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 5, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 6, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 10, 'time_key': '20230831101106', 'time': '2023-08-31 10:11:06 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 11, 'time_key': '20230831101107', 'time': '2023-08-31 10:11:07 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 15, 'time_key': '20230831104254', 'time': '2023-08-31 10:42:54 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 16, 'time_key': '20230831104255', 'time': '2023-08-31 10:42:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.1}, {'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:55:37,059][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:55:58,439][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:55:58,461][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:55:58,468][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 1, 'time_key': '20230821040255', 'time': '2023-08-21 04:02:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.3}, {'uid': 2, 'time_key': '20230821040256', 'time': '2023-08-21 04:02:56 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 42.8}, {'uid': 3, 'time_key': '20230831092513', 'time': '2023-08-31 09:25:13 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 4, 'time_key': '20230831092514', 'time': '2023-08-31 09:25:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 5, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 6, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 10, 'time_key': '20230831101106', 'time': '2023-08-31 10:11:06 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 11, 'time_key': '20230831101107', 'time': '2023-08-31 10:11:07 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 15, 'time_key': '20230831104254', 'time': '2023-08-31 10:42:54 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 16, 'time_key': '20230831104255', 'time': '2023-08-31 10:42:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.1}, {'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:55:58,468][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:56:21,716][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:56:21,755][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:56:21,760][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:56:21,761][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:57:18,209][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:57:18,234][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:57:18,241][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:57:18,242][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:57:24,463][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:57:24,484][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:57:24,491][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:57:24,492][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:57:31,037][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:57:31,074][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:57:31,078][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:57:31,078][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:57:32,473][PID:35756][INFO] [get_monitor_info] called api.
+[2023-09-01 12:57:32,496][PID:35756][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:57:32,502][PID:35756][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 12:57:32,502][PID:35756][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:57:39,257][PID:36576][INFO] version: 1.0.0
+[2023-09-01 12:57:39,393][PID:36576][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:57:39,394][PID:36576][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:57:43,070][PID:36576][INFO] [get_monitor_info] called api.
+[2023-09-01 12:57:43,096][PID:36576][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:57:43,107][PID:36576][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', ()), ('pageInfo', {})])
+[2023-09-01 12:57:43,108][PID:36576][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:59:13,766][PID:40896][INFO] version: 1.0.0
+[2023-09-01 12:59:13,952][PID:40896][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:59:13,953][PID:40896][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:59:15,732][PID:36984][INFO] version: 1.0.0
+[2023-09-01 12:59:15,964][PID:36984][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-01 12:59:15,964][PID:36984][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-01 12:59:26,610][PID:36984][INFO] [get_monitor_info] called api.
+[2023-09-01 12:59:26,639][PID:36984][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:59:26,644][PID:36984][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', ()), ('pageInfo', {})])
+[2023-09-01 12:59:26,644][PID:36984][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:59:38,176][PID:36984][INFO] [get_monitor_info] called api.
+[2023-09-01 12:59:38,196][PID:36984][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:59:38,202][PID:36984][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 7, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 8, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.6}, {'uid': 9, 'time_key': '20230831122400', 'time': '2023-08-31 12:24:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 12, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 13, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 14, 'time_key': '20230831010600', 'time': '2023-08-31 01:06:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 17, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.4}, {'uid': 18, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 19, 'time_key': '20230831013700', 'time': '2023-08-31 01:37:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}]), ('pageInfo', {})])
+[2023-09-01 12:59:38,203][PID:36984][INFO] [db_close] MySQL disconnected.
+[2023-09-01 12:59:48,379][PID:36984][INFO] [get_monitor_info] called api.
+[2023-09-01 12:59:48,402][PID:36984][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 12:59:48,407][PID:36984][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', ()), ('pageInfo', {})])
+[2023-09-01 12:59:48,407][PID:36984][INFO] [db_close] MySQL disconnected.
+[2023-09-01 13:00:35,887][PID:36984][INFO] [get_monitor_info] called api.
+[2023-09-01 13:00:35,915][PID:36984][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-01 13:00:35,921][PID:36984][INFO] [get_monitor_info] return data:OrderedDict([('success', True), ('resultCode', '0'), ('resultMessage', ''), ('data', [{'uid': 1, 'time_key': '20230821040255', 'time': '2023-08-21 04:02:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.3}, {'uid': 2, 'time_key': '20230821040256', 'time': '2023-08-21 04:02:56 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 42.8}, {'uid': 3, 'time_key': '20230831092513', 'time': '2023-08-31 09:25:13 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 4, 'time_key': '20230831092514', 'time': '2023-08-31 09:25:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 5, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 6, 'time_key': '20230831092914', 'time': '2023-08-31 09:29:14 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 7, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 8, 'time_key': '20230831121917', 'time': '2023-08-31 12:19:17 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.6}, {'uid': 9, 'time_key': '20230831122400', 'time': '2023-08-31 12:24:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 10, 'time_key': '20230831101106', 'time': '2023-08-31 10:11:06 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 11, 'time_key': '20230831101107', 'time': '2023-08-31 10:11:07 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.2}, {'uid': 12, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.3}, {'uid': 13, 'time_key': '20230831010109', 'time': '2023-08-31 01:01:09 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 14, 'time_key': '20230831010600', 'time': '2023-08-31 01:06:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 15, 'time_key': '20230831104254', 'time': '2023-08-31 10:42:54 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 16, 'time_key': '20230831104255', 'time': '2023-08-31 10:42:55 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 46.1}, {'uid': 17, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-0418b4b2c14c8bdd4', 'instance_name': 'mpower-server', 'metric': 'cpu', 'value': 95.4}, {'uid': 18, 'time_key': '20230831013257', 'time': '2023-08-31 01:32:57 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'cpu', 'value': 0.7}, {'uid': 19, 'time_key': '20230831013700', 'time': '2023-08-31 01:37:00 PM', 'vendor': 'aws', 'instance_id': 'i-050055ad7cbb6d5ed', 'instance_name': 'test-vm', 'metric': 'memory', 'value': 18.9}, {'uid': 20, 'time_key': '20230901125409', 'time': '2023-09-01 12:54:09 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': 0.1}, {'uid': 21, 'time_key': '20230901125410', 'time': '2023-09-01 12:54:10 PM', 'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': 47.3}]), ('pageInfo', {})])
+[2023-09-01 13:00:35,926][PID:36984][INFO] [db_close] MySQL disconnected.
+[2023-09-07 13:32:23,717][PID:40340][INFO] version: 1.0.0
+[2023-09-07 13:32:23,485][PID:40340][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-07 13:32:23,486][PID:40340][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-07 13:32:29,950][PID:37472][INFO] version: 1.0.0
+[2023-09-07 13:32:29,466][PID:37472][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-07 13:32:29,467][PID:37472][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-07 13:32:31,021][PID:37472][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='cpu' value=0.1 time='2023-09-07 01:32:30 PM' time_key='20230907013230'
+[2023-09-07 13:32:31,021][PID:37472][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'cpu', 'value': '0.1', 'time': '2023-09-07 01:32:30 PM', 'time_key': '20230907013230'}
+[2023-09-07 13:32:31,062][PID:37472][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-07 13:32:31,064][PID:37472][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-09-07 13:32:31,065][PID:37472][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-09-07 13:32:31,078][PID:37472][INFO] [db_insert] DB insert success. table(monitor)
+[2023-09-07 13:32:31,091][PID:37472][INFO] [db_close] MySQL disconnected.
+[2023-09-07 13:32:31,585][PID:37472][INFO] [post_monitor_info] called api. item:vendor='gcp' instance_id='3361798994575063946' instance_name='' metric='memory' value=50.5 time='2023-09-07 01:32:31 PM' time_key='20230907013231'
+[2023-09-07 13:32:31,586][PID:37472][INFO] [post_monitor_info] item:{'vendor': 'gcp', 'instance_id': '3361798994575063946', 'instance_name': '', 'metric': 'memory', 'value': '50.5', 'time': '2023-09-07 01:32:31 PM', 'time_key': '20230907013231'}
+[2023-09-07 13:32:31,624][PID:37472][INFO] [db_connect] MySQL connected. config:(34.64.70.62)
+[2023-09-07 13:32:31,626][PID:37472][INFO] [db_insert] DB insert start. table(monitor) columns(7) rows(1)
+[2023-09-07 13:32:31,626][PID:37472][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
+[2023-09-07 13:32:31,635][PID:37472][INFO] [db_insert] DB insert success. table(monitor)
+[2023-09-07 13:32:31,644][PID:37472][INFO] [db_close] MySQL disconnected.
+[2023-09-10 14:50:08,730][PID:14264][INFO] version: 1.0.0
+[2023-09-10 14:50:08,840][PID:14264][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:08,840][PID:14264][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-10 14:50:09,689][PID:19676][INFO] version: 1.0.0
+[2023-09-10 14:50:09,768][PID:19676][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:09,768][PID:19676][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-10 14:50:51,651][PID:14276][INFO] version: 1.0.0
+[2023-09-10 14:50:51,736][PID:14276][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:51,736][PID:14276][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-10 14:50:52,548][PID:2788][INFO] version: 1.0.0
+[2023-09-10 14:50:52,642][PID:2788][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:52,642][PID:2788][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-18 17:37:36,197][PID:20656][INFO] version: 1.0.0
+[2023-09-18 17:37:36,142][PID:20656][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-18 17:37:36,142][PID:20656][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-18 17:37:38,208][PID:22776][INFO] version: 1.0.0
+[2023-09-18 17:37:38,303][PID:22776][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-18 17:37:38,303][PID:22776][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
