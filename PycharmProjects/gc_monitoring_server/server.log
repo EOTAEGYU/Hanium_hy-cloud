@@ -353,3 +353,21 @@
 [2023-09-07 13:32:31,626][PID:37472][INFO] [db_insert] SQL:INSERT INTO monitor(vendor,instance_id,instance_name,metric,value,time,time_key) VALUES(%s,%s,%s,%s,%s,%s,%s)
 [2023-09-07 13:32:31,635][PID:37472][INFO] [db_insert] DB insert success. table(monitor)
 [2023-09-07 13:32:31,644][PID:37472][INFO] [db_close] MySQL disconnected.
+[2023-09-10 14:50:08,730][PID:14264][INFO] version: 1.0.0
+[2023-09-10 14:50:08,840][PID:14264][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:08,840][PID:14264][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-10 14:50:09,689][PID:19676][INFO] version: 1.0.0
+[2023-09-10 14:50:09,768][PID:19676][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:09,768][PID:19676][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-10 14:50:51,651][PID:14276][INFO] version: 1.0.0
+[2023-09-10 14:50:51,736][PID:14276][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:51,736][PID:14276][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-10 14:50:52,548][PID:2788][INFO] version: 1.0.0
+[2023-09-10 14:50:52,642][PID:2788][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-10 14:50:52,642][PID:2788][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-18 17:37:36,197][PID:20656][INFO] version: 1.0.0
+[2023-09-18 17:37:36,142][PID:20656][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-18 17:37:36,142][PID:20656][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1
+[2023-09-18 17:37:38,208][PID:22776][INFO] version: 1.0.0
+[2023-09-18 17:37:38,303][PID:22776][INFO] [load_config] Config file: (./config/config.xml)
+[2023-09-18 17:37:38,303][PID:22776][INFO] [load_config] Log path: ./server.log, level: info, max size: 10485760, file count: 10, console log: 1

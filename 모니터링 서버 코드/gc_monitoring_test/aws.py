@@ -21,8 +21,6 @@ def get_instance_list(session):
     response = ec2_client.describe_instances()
     for reservation in response['Reservations']:
         for instance in reservation['Instances']:
-            if instance['InstanceId'] == 'i-0412efb5ac632f4e9':
-                continue
 
             _dict = {}
             _dict['instance_id'] = instance['InstanceId']
@@ -31,7 +29,7 @@ def get_instance_list(session):
             _list.append(_dict)
     return _list
 
-def get_cpu_utilization(session, instances,  region_name='ap-northeast-2'):
+def get_cpu_utilization(session, instances, region_name='ap-northeast-2'):
 
     cloudwatch_client = session.client('cloudwatch', region_name=region_name)
 
@@ -40,8 +38,6 @@ def get_cpu_utilization(session, instances,  region_name='ap-northeast-2'):
 
     result_list = []
     for instance in instances:
-        if instance['instance_id'] == 'i-0412efb5ac632f4e9':
-            continue
         # 메트릭 쿼리 설정
         response = cloudwatch_client.get_metric_data(
             MetricDataQueries=[
@@ -87,7 +83,7 @@ def get_cpu_utilization(session, instances,  region_name='ap-northeast-2'):
     return result_list
 
 
-def get_memory_utilization(session, instances,  region_name='ap-northeast-2'):
+def get_memory_utilization(session, instances, region_name='ap-northeast-2'):
 
     cloudwatch_client = session.client('cloudwatch')
 
@@ -96,8 +92,6 @@ def get_memory_utilization(session, instances,  region_name='ap-northeast-2'):
 
     result_list = []
     for instance in instances:
-        if instance['instance_id'] == 'i-0412efb5ac632f4e9':
-            continue
 
         response = cloudwatch_client.get_metric_data(
             MetricDataQueries=[
@@ -139,3 +133,5 @@ def get_memory_utilization(session, instances,  region_name='ap-northeast-2'):
             result_list.append(_dict)
 
     return result_list
+
+
