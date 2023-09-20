@@ -1,27 +1,231 @@
-<ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정1
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정2
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정3
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                필요한 세부사항 추가 예정4
-              </a>
-            </li>
+(() => {
+  'use strict';
 
-            </ul> 
+  
+  // AWS 차트 생성
+  function createAWS(ctxaws, initialData = []) {
+    return new Chart(ctxaws, {
+      type: 'line',
+      data: {
+        labels: Array(initialData.length).fill(''),
+        datasets: [{
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) => //주기적으로 서버에서 데이터 가져오기
+          response.json()
+        ).then((res)=>{
+          console.log(res.data);
+        }).catch((err)=>{
+          console.log(err);
+        })],
+          label: "CPU",
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: '#007bff',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff'
+        }, {
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=aws").then((response) => //주기적으로 서버에서 데이터 가져오기
+          response.json()
+        ).then((res)=>{
+          console.log(res.data);
+        }).catch((err)=>{
+          console.log(err);
+        })],
+          label: "Memory",
+          fill: false,
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: "#c45850",
+          borderWidth: 4,
+          pointBackgroundColor: "#c45850"
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false
+          },  
+          tooltip: {
+            boxPadding: 3
+          }
+        }
+      }
+    });
+  }
+
+  // GCP 차트 생성
+  function createGCP(ctxgcp, initialData = []) {
+    return new Chart(ctxgcp, {
+      type: 'line',
+      data: {
+        labels: Array(initialData.length).fill(''),
+        datasets: [{
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) => //주기적으로 서버에서 데이터 가져오기
+          response.json()
+        ).then((res)=>{
+          console.log(res.data);
+        }).catch((err)=>{
+          console.log(err);
+        })],
+          label: "CPU",
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: '#007bff',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff'
+        }, {
+          data: [fetch("http://3.37.10.77:8000/monitor_info?vendor=gcp").then((response) => //주기적으로 서버에서 데이터 가져오기
+          response.json()
+        ).then((res)=>{
+          console.log(res.data);
+        }).catch((err)=>{
+          console.log(err);
+        })],
+          label: "Memory",
+          fill: false,
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: "#c45850",
+          borderWidth: 4,
+          pointBackgroundColor: "#c45850"
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            boxPadding: 3
+          }
+        }
+      }
+    });
+  }
+
+  function addData(chartInstance, newData) {
+    const newLabel = new Date().toLocaleTimeString();
+    chartInstance.data.labels.push(newLabel);
+    chartInstance.data.datasets.forEach((dataset, idx) => {
+      dataset.data.push(newData[idx]);
+    });
+    if (chartInstance.data.labels.length > 10) {
+      removeData(chartInstance); //10 넘어가면 처음꺼 삭제
+    }
+    chartInstance.update();
+  }
+
+  //shift를 이용하여 한자리씩 앞으로 이동
+  function removeData(chartInstance) {
+    chartInstance.data.labels.shift();
+    chartInstance.data.datasets.forEach((dataset) => {
+      dataset.data.shift();
+    });
+  }
+
+  const chartAWSIds = ['AChart', 'AChart1', 'AChart2', 'AChart3', 'AChart4', 'AChart5'];
+  const chartGCPIds = ['GChart', 'GChart1', 'GChart2', 'GChart3', 'GChart4', 'GChart5'];
+
+  const awsCharts = chartAWSIds.map(id => createAWS(document.getElementById(id)));
+  const gcpCharts = chartGCPIds.map(id => createGCP(document.getElementById(id)));
+
+  // AWS용 setInterval 함수
+  setInterval(async function() {
+    let newData = await fetchData('aws');
+    awsCharts.forEach(chart => {
+      addData(chart, newData);
+    });
+  }, 1000);
+
+  // GCP용 setInterval 함수
+  setInterval(async function() {
+    let newData = await fetchData('gcp');
+    gcpCharts.forEach(chart => {
+      addData(chart, newData);
+    });
+  }, 1000);
+
+  async function fetchData(vendor) {
+    try {
+      const response = await fetch(`http://3.37.10.77:8000/monitor_info?vendor=${vendor}`);
+      const data = await response.json();
+      // 이 부분은 서버에서 받아오는 데이터 형태에 따라 적절히 수정되어야 합니다.
+      // 예를 들어, CPU와 Memory 데이터를 배열로 반환한다고 가정합니다.
+      return [data.cpu, data.memory];
+    } catch (error) {
+      console.error(`Error fetching data for ${vendor}:`, error);
+      return [0, 0];  // 에러 발생 시 0으로 데이터 설정
+    }
+  }
+
+})();
+
+
+
+//aws 활성화 버튼
+function showAWS() {
+  document.getElementById("AChart").style.display = "";
+  document.getElementById("AChart1").style.display = "";
+  document.getElementById("AChart2").style.display = "";
+  document.getElementById("AChart3").style.display = "";
+  document.getElementById("AChart4").style.display = "";
+  document.getElementById("AChart5").style.display = "";
+
+  document.getElementById("GChart").style.display = "none";
+  document.getElementById("GChart1").style.display = "none";
+  document.getElementById("GChart2").style.display = "none";
+  document.getElementById("GChart3").style.display = "none";
+  document.getElementById("GChart4").style.display = "none";
+  document.getElementById("GChart5").style.display = "none";
+
+  //버튼 활성화 여부 
+  let awsButton = document.querySelector('button[onclick="showAWS()"]');
+  let gcpButton = document.querySelector('button[onclick="showGCP()"]');
+  awsButton.classList.remove('btn-outline-secondary');
+  awsButton.classList.add('btn-warning');
+  
+  gcpButton.classList.add('btn-outline-secondary');
+  gcpButton.classList.remove('btn-primary');
+}
+
+//gcp 활성화 버튼
+function showGCP() {
+  document.getElementById("AChart").style.display = "none";
+  document.getElementById("AChart1").style.display = "none";
+  document.getElementById("AChart2").style.display = "none";
+  document.getElementById("AChart3").style.display = "none";
+  document.getElementById("AChart4").style.display = "none";
+  document.getElementById("AChart5").style.display = "none";
+
+  document.getElementById("GChart").style.display = "";
+  document.getElementById("GChart1").style.display = "";
+  document.getElementById("GChart2").style.display = "";
+  document.getElementById("GChart3").style.display = "";
+  document.getElementById("GChart4").style.display = "";
+  document.getElementById("GChart5").style.display = "";
+
+  //버튼 활성화 여부
+  let awsButton = document.querySelector('button[onclick="showAWS()"]');
+  let gcpButton = document.querySelector('button[onclick="showGCP()"]');
+  gcpButton.classList.remove('btn-outline-secondary');
+  gcpButton.classList.add('btn-primary');
+  
+  awsButton.classList.add('btn-outline-secondary');
+  awsButton.classList.remove('btn-primary'); 
+  awsButton.classList.remove('btn-warning');
+}
+
+let isDateShown = false;  // 상태를 추적하는 전역 변수
+
+function showData() {
+  const dataDisplayElement = document.getElementById('dataDisplay');
+    const currentDate = new Date();
+    const dateString = currentDate.toLocaleDateString() + " " + currentDate.toLocaleTimeString();
+    dataDisplayElement.innerText = dateString;  // 날짜 정보 표시
+    setInterval(showData, 1000); //1초에 한 번씩 showdata 함수 호출
+
+  isDateShown = !isDateShown;  // 상태 전환
+}
+
+
+//디폴트로 aws를 화면에 보여줌
+showAWS();
