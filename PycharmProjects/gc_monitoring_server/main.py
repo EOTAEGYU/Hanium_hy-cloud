@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from collections import OrderedDict
-
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import os
 import sys
@@ -25,14 +25,19 @@ class MonitorInfo(BaseModel):
     time_key: str
 
 app = FastAPI()
-
-@app.post("/monitor_info")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 실제 배포시에는 특정 도메인을 명시적으로 지정해주세요.
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+@app.post("/monitor_info") # AWS, GCP 인스턴스로부터 받은 모니터링 데이터를 데이터베이스에 저장합니다.
 def post_monitor_info(monitorInfo: MonitorInfo):
     try:
         myfunc = sys._getframe().f_code.co_name
         global logger
         logger.info(f"[{myfunc}] called api. item:{monitorInfo}")
-
         _dict = {}
         _dict['vendor'] = str(monitorInfo.vendor)
         _dict['instance_id'] = str(monitorInfo.instance_id)
@@ -61,8 +66,9 @@ def post_monitor_info(monitorInfo: MonitorInfo):
         mysql_wrapper.db_close()
         return json_data
 
-@app.get("/monitor_info")
-def get_monitor_info(instance_id: Optional[str] = None, start_date: Optional[str] = None, vendor: Optional[str] = None):
+@app.get("/monitor_info") #저장된 모니터링 데이터를 웹에서 조회할 수 있게 해줍니다.
+def get_monitor_info(instance_id: Optional[str] = None, start_date: Optional[str] = None,
+                     vendor: Optional[str] = None, metric: Optional[str] = None):
     try:
         myfunc = sys._getframe().f_code.co_name
         logger.info(f"[{myfunc}] called api.")
@@ -77,6 +83,8 @@ def get_monitor_info(instance_id: Optional[str] = None, start_date: Optional[str
             sql_text = sql_text + f"and time > '{start_date}' "
         if vendor:
             sql_text = sql_text + f"and vendor = '{vendor}' "
+        if metric:
+            sql_text = sql_text + f"and metric = '{metric}' "
 
         monitor_info = mysql_wrapper.db_select("all", sql_text)
 
@@ -111,7 +119,7 @@ def shutdown():
 
 if __name__ == '__main__':
 
-    os.environ.setdefault('SERVER_HOME', 'C:\\Users\\jino\\PycharmProjects\\gc_monitoring_server')
+    # os.environ.setdefault('SERVER_HOME', 'C:\\Users\\tjddu\\OneDrive - 대전대학교\\바탕 화면\\Hanium_hy-cloud - 복사본\\PycharmProjects\\gc_monitoring_server')
 
     try:
         server_home = os.getenv('SERVER_HOME')
@@ -130,6 +138,3 @@ if __name__ == '__main__':
     except Exception as err:
         print(f"{now} process terminated with exception")
         raise SystemExit(-1)
-
-
-

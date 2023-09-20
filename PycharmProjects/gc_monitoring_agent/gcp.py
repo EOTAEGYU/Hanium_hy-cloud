@@ -13,7 +13,7 @@ def set_credentials(filepath):
 
 def print_list():
     client = monitoring_v3.MetricServiceClient()
-    project_name = f"projects/poc-jhlee"
+    project_name = f"projects/hycloud-399403"
 
     """
     모니터링 리소스 나열 > 모니터링할 수 있는 클라우드 항목"""
@@ -28,7 +28,7 @@ def print_list():
 
 def print_get():
     client = monitoring_v3.MetricServiceClient()
-    project_name = f"projects/poc-jhlee"
+    project_name = f"projects/hycloud-399403"
 
     now = time.time()
     tm = localtime(now)
@@ -48,7 +48,7 @@ def print_get():
             #agent.googleapis.com/memory/bytes_used
             #agent.googleapis.com/memory/percent_used
             #"filter": 'metric.type = "compute.googleapis.com/instance/cpu/utilization" AND metric.label.instance_name = "test-vm"',
-            "filter": 'metric.type = "agent.googleapis.com/memory/percent_used" AND resource.labels.instance_id = "3361798994575063946"',
+            "filter": 'metric.type = "agent.googleapis.com/memory/percent_used" AND resource.labels.instance_id = ""',
             #"filter": 'metric.type = "agent.googleapis.com/cpu/utilization"',
             "interval": interval,
             "view": monitoring_v3.ListTimeSeriesRequest.TimeSeriesView.FULL,
@@ -130,7 +130,7 @@ def get_cpu_utilization(project_id):
             _dict = {}
             _dict["vendor"] = "gcp"
             _dict["instance_id"] = result.resource.labels.get("instance_id")
-            _dict["instance_name"] = ""
+            _dict["instance_name"] = result.resource.type
             _dict["metric"] = "cpu"
             _dict["value"] = round(100 - result.points[0].value.double_value, 1)
             _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)
@@ -212,14 +212,14 @@ def get_process_status(project_id, instance_id, process_name):
         is_running = 1
         _dict["vendor"] = "gcp"
         _dict["instance_id"] = instance_id
-        _dict["instance_name"] = ""
+        _dict["instance_name"] = project_id
         _dict["metric"] = "process"
         _dict["value"] = "running"
         _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)
     if is_running == 0:
         _dict["vendor"] = "gcp"
         _dict["instance_id"] = instance_id
-        _dict["instance_name"] = ""
+        _dict["instance_name"] = project_id
         _dict["metric"] = f"process({process_name})"
         _dict["value"] = "stopped"
         _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)

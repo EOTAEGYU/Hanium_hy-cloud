@@ -158,7 +158,7 @@ async function fetchData(vendor) {
 
     //1. 쿼리 파라미터로 cpu와 memory 분류(백 서버에서 만들어 주면) 
     //2. json 키 분류 하기(metric 혹은 instace를 기준으로 값 받아오기 )
-    //3. cpu와 memory의 value가 모두 들어왔을 경우에 chart에 값 넣기
+    //3.cpu와 memory의 value가 모두 들어왔을 경우에 chart에 값 넣기
     //4. 서버별, cpu memory 별 구분하여 값 받기
     awsCharts.forEach((chart,index) => {
       console.log(data.data[index])
