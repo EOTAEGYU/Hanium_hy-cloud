@@ -115,8 +115,9 @@
     chartInstance.data.datasets.forEach((dataset) => {
       dataset.data.shift();
     });
+    chartInstance.update();
   }
-
+  
   function initializeCharts() {
     const chartAWSIds = ['AChart', 'AChart1', 'AChart2', 'AChart3', 'AChart4', 'AChart5'];
     const chartGCPIds = ['GChart', 'GChart1', 'GChart2', 'GChart3', 'GChart4', 'GChart5'];
