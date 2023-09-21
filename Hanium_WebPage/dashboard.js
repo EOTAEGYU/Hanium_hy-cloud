@@ -101,7 +101,9 @@
     const newLabel = new Date().toLocaleTimeString();
     chartInstance.data.labels.push(newLabel);
     chartInstance.data.datasets.forEach((dataset, idx) => {
-      dataset.data.push(newData[idx]);
+      console.log(newData);
+      // 민석 수정: 기존 코드dataset.data.push(newData[idx]);
+      dataset.data.push(newData);
     });
     if (chartInstance.data.labels.length > 10) {
       removeData(chartInstance); //10 넘어가면 처음꺼 삭제
@@ -115,45 +117,56 @@
     chartInstance.data.datasets.forEach((dataset) => {
       dataset.data.shift();
     });
-    chartInstance.update();
   }
-  
-  function initializeCharts() {
-    const chartAWSIds = ['AChart', 'AChart1', 'AChart2', 'AChart3', 'AChart4', 'AChart5'];
-    const chartGCPIds = ['GChart', 'GChart1', 'GChart2', 'GChart3', 'GChart4', 'GChart5'];
-  
-    const awsCharts = chartAWSIds.map(id => createAWS(document.getElementById(id)));
-    const gcpCharts = chartGCPIds.map(id => createGCP(document.getElementById(id)));
-  
-    // AWS용 setInterval 함수
-    setInterval(async function() {
-      let newData = await fetchData('aws');
-      awsCharts.forEach(chart => {
-        addData(chart, newData);
-      });
-    }, 1000);
-  
-    // GCP용 setInterval 함수
-    setInterval(async function() {
-      let newData = await fetchData('gcp');
-      gcpCharts.forEach(chart => {
-        addData(chart, newData);
-      });
-    }, 1000);
-  
-    // 초기에 AWS 차트를 표시
-    showAWS();
-  }
-  
-  // 페이지 로드 시 차트 초기화를 진행
-  window.onload = initializeCharts;
+
+  const chartAWSIds = ['AChart', 'AChart1', 'AChart2', 'AChart3', 'AChart4', 'AChart5'];
+  const chartGCPIds = ['GChart', 'GChart1', 'GChart2', 'GChart3', 'GChart4', 'GChart5'];
+
+  const awsCharts = chartAWSIds.map(id => createAWS(document.getElementById(id)));
+  const gcpCharts = chartGCPIds.map(id => createGCP(document.getElementById(id)));
+
+  // AWS용 setInterval 함수
+setInterval(async function() {
+  await fetchData(('aws'));
+  //민석 수정
+  // let newData = await fetchData(('aws'));
+  // awsCharts.forEach(chart => {
+  //   addData(chart, newData);
+  // });
+}, 1000);
+
+// GCP용 setInterval 함수
+setInterval(async function() {
+  //민석 수정
+  // let newData = await fetchData('gcp');
+  // gcpCharts.forEach(chart => {
+  //   addData(chart, newData);
+  // });
+}, 1000);
+
 
 async function fetchData(vendor) {
   try {
     const response = await fetch(`http://3.37.10.77:8000/monitor_info?vendor=${vendor}`);
     const data = await response.json();
     console.log(`Data for ${vendor}:`, data);  // 여기서 데이터 로깅
-    return [data.cpu, data.memory];
+
+    console.log(data);
+    
+    //json의 값을 보면 data.data로가서 그안에 키 값을 이용해서 받아 와야함 홍교가 하려는 것은 cpu라는 키값과 memory라는 키값을 받아오려고 했던 것 같지만 키에는 cpu 라는 것과 memory라는 것이 없음
+    //그리고 forEach라는 것으로 가져오게 되면 cpu와 memory가 분류가 안됨
+
+    //1. 쿼리 파라미터로 cpu와 memory 분류(백 서버에서 만들어 주면) 
+    //2. json 키 분류 하기(metric 혹은 instace를 기준으로 값 받아오기 )
+    //3.cpu와 memory의 value가 모두 들어왔을 경우에 chart에 값 넣기
+    //4. 서버별, cpu memory 별 구분하여 값 받기
+    awsCharts.forEach((chart,index) => {
+      console.log(data.data[index])
+
+      addData(chart, data.data[index].value);
+    });
+    //민석 수정
+    // return [data.cpu, data.memory];
   } catch (error) {
     console.error(`Error fetching data for ${vendor}:`, error);
     return [0, 0];  // 에러 발생 시 0으로 데이터 설정
