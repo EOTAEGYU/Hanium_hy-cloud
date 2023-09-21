@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     #result = gcp.get_process_status(project_id, "7519728534255468535", "./test 12345")
     # print(result)
-    response = rest_client.restapi_post("http://3.37.10.77:8000/monitor_info", result)
+    # response = rest_client.restapi_post("http://3.37.10.77:8000/monitor_info", result)
 
 
     ###########################################################################################
@@ -55,10 +55,9 @@ if __name__ == '__main__':
         print(result)
         response = rest_client.restapi_post("http://3.37.10.77:8000/monitor_info", result)
 
-    # CPU 사용량 조회
+    # memory 사용량 조회
     results = aws.get_memory_utilization(session, instances)
     for result in results:
         print(result)
         response = rest_client.restapi_post("http://3.37.10.77:8000/monitor_info", result)
-
 

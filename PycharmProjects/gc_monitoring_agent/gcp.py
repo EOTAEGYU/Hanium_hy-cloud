@@ -130,7 +130,7 @@ def get_cpu_utilization(project_id):
             _dict = {}
             _dict["vendor"] = "gcp"
             _dict["instance_id"] = result.resource.labels.get("instance_id")
-            _dict["instance_name"] = result.resource.type
+            _dict["instance_name"] = ""
             _dict["metric"] = "cpu"
             _dict["value"] = round(100 - result.points[0].value.double_value, 1)
             _dict["time"] = strftime('%Y-%m-%d %I:%M:%S %p', tm)

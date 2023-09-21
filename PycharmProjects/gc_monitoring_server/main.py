@@ -119,7 +119,8 @@ def shutdown():
 
 if __name__ == '__main__':
 
-    # os.environ.setdefault('SERVER_HOME', 'C:\\Users\\tjddu\\OneDrive - 대전대학교\\바탕 화면\\Hanium_hy-cloud - 복사본\\PycharmProjects\\gc_monitoring_server')
+    os.environ.setdefault('SERVER_HOME', 'C:\\Users\\wkdrn\\OneDrive\\Hanium_hy-cloud'
+                                         '\\PycharmProjects\\gc_monitoring_server')
 
     try:
         server_home = os.getenv('SERVER_HOME')
