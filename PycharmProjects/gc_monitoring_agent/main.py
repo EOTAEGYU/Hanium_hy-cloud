@@ -12,7 +12,8 @@ if __name__ == '__main__':
     print("#########################")
     print("# GCP 모니터링")
 
-    gcp.set_credentials('C:\\Users\\wkdrn\\OneDrive\\Hanium_hy-cloud\\PycharmProjects\\hycloud-399403-799ec3774fe3.json') # gcp service account 에서 생성한 json 키 파일 경로 입력
+    # gcp service account 에서 생성한 json 키 파일 경로 입력
+    gcp.set_credentials('C:\\Users\\wkdrn\\OneDrive\\Hanium_hy-cloud\\PycharmProjects\\hycloud-399403-799ec3774fe3.json')
 
     project_id = "hycloud-399403"
     results = gcp.get_cpu_utilization(project_id)
@@ -27,7 +28,7 @@ if __name__ == '__main__':
         response = rest_client.restapi_post("http://3.37.10.77:8000/monitor_info", result)
 
 
-    result = gcp.get_process_status(project_id, "7519728534255468535", "./test 12345")
+    #result = gcp.get_process_status(project_id, "7519728534255468535", "./test 12345")
     # print(result)
     response = rest_client.restapi_post("http://3.37.10.77:8000/monitor_info", result)
 
